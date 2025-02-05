@@ -48,3 +48,67 @@
 .gallery-image:hover {
   transform: scale(1.05);
 }
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+ 
+ 
+  max-width: 360px; 
+  margin: 24px auto;
+}
+
+.main-title {
+  font-size: 16px;
+  font-weight: 400;
+  color: #2e2f42;
+
+  text-transform: lowercase;
+  align-self: flex-start;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 16px;
+  text-align: start;
+}
+
+input,
+textarea {
+  width: 360px;
+  padding: 8px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 16px;
+  background: url('data:image/svg+xml,<svg width="360" height="40" viewBox="0 0 360 40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="0.5" width="359" height="39" rx="3.5" stroke="%23808080"/></svg>') no-repeat center;
+text-align: start;
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+button {
+  width: 86px;
+  height: 40px;
+  padding: 12px 20px;
+  background: #4a90e2;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+ 
+}
+
+button:hover {
+  background: #357ab7;
+}
